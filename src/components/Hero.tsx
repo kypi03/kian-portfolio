@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { ArrowDown, FileText, Compass, ExternalLink, Mail } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 

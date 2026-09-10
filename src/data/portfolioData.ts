@@ -1,4 +1,4 @@
-﻿import { ResearchPillar, ResearchProject, Publication, SkillCategory, ExperienceItem, EducationItem, ReferenceItem } from '../types';
+import { ResearchPillar, ResearchProject, Publication, SkillCategory, ExperienceItem, EducationItem, ReferenceItem } from '../types';
 
 export const personalInfo = {
   name: 'Kian Pishvaie',

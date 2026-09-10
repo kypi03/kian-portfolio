@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { educationHistory, experienceHistory } from '../data/portfolioData';
 import { GraduationCap, Award, Briefcase, BookOpen } from 'lucide-react';
 

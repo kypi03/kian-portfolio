@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { publications } from '../data/portfolioData';
 import { ExternalLink, Check, BookOpen, Quote } from 'lucide-react';
 

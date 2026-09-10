@@ -1,4 +1,4 @@
-﻿# Kian Pishvaie — Applied Chemistry & Materials Research Portfolio
+# Kian Pishvaie — Applied Chemistry & Materials Research Portfolio
 
 A distinctive, luxury editorial personal research portfolio for **Kian Pishvaie**, Applied Chemistry graduate and early-career researcher.
 

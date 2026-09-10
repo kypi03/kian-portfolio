@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { researchPillars } from '../data/portfolioData';
 import { Activity, Layers, Zap, Cpu, CheckCircle2 } from 'lucide-react';
 

@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { skillCategories } from '../data/portfolioData';
 import { Activity, Microscope, Cpu, PenTool } from 'lucide-react';
 

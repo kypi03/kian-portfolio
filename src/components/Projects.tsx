@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { featuredProjects } from '../data/portfolioData';
 import { CheckCircle, Sliders, FlaskConical, Binary } from 'lucide-react';
 

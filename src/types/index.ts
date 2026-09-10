@@ -1,4 +1,4 @@
-﻿export interface ResearchPillar {
+export interface ResearchPillar {
   id: string;
   number: string;
   title: string;

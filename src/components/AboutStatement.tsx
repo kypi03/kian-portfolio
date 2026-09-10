@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { personalInfo, languages, academicReferences } from '../data/portfolioData';
 import { Globe, Users, Mail, ExternalLink, Quote } from 'lucide-react';
 
