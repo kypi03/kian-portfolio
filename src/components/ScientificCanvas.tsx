@@ -25,7 +25,6 @@ export const ScientificCanvas: React.FC<ScientificCanvasProps> = ({ darkMode }) 
 
     window.addEventListener('resize', handleResize);
 
-    // Particles simulating electrochemical ions / lattice nodes
     const nodeCount = 38;
     const nodes: {
       x: number;
@@ -55,18 +54,15 @@ export const ScientificCanvas: React.FC<ScientificCanvasProps> = ({ darkMode }) 
       time += 0.008;
       ctx.clearRect(0, 0, width, height);
 
-      const strokeColor = darkMode ? 'rgba(44, 130, 201, 0.12)' : 'rgba(26, 101, 158, 0.09)';
       const goldAccent = darkMode ? 'rgba(214, 168, 79, 0.35)' : 'rgba(214, 168, 79, 0.25)';
       const latticeColor = darkMode ? 'rgba(203, 213, 225, 0.4)' : 'rgba(7, 26, 43, 0.3)';
 
-      // Subtle electrode boundary at bottom-right
       const electrodeGradient = ctx.createLinearGradient(width - 250, 0, width, height);
       electrodeGradient.addColorStop(0, 'transparent');
       electrodeGradient.addColorStop(1, darkMode ? 'rgba(11, 41, 66, 0.3)' : 'rgba(217, 222, 227, 0.25)');
       ctx.fillStyle = electrodeGradient;
       ctx.fillRect(width - 260, 0, 260, height);
 
-      // Draw subtle lattice lines between close nodes
       for (let i = 0; i < nodes.length; i++) {
         for (let j = i + 1; j < nodes.length; j++) {
           const dx = nodes[i].x - nodes[j].x;
@@ -85,13 +81,11 @@ export const ScientificCanvas: React.FC<ScientificCanvasProps> = ({ darkMode }) 
         }
       }
 
-      // Draw and update nodes
       for (let i = 0; i < nodes.length; i++) {
         const n = nodes[i];
         n.x += n.vx;
         n.y += n.vy;
 
-        // Wrap around boundaries
         if (n.x < 0) n.x = width;
         if (n.x > width) n.x = 0;
         if (n.y < 0) n.y = height;

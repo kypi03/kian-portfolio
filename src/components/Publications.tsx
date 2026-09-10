@@ -1,6 +1,6 @@
 ﻿import React, { useState } from 'react';
 import { publications } from '../data/portfolioData';
-import { ExternalLink, Copy, Check, BookOpen, Quote } from 'lucide-react';
+import { ExternalLink, Check, BookOpen, Quote } from 'lucide-react';
 
 export const Publications: React.FC = () => {
   const [copiedId, setCopiedId] = useState<string | null>(null);
@@ -28,10 +28,10 @@ export const Publications: React.FC = () => {
 
       {/* Publications List */}
       <div className="space-y-8">
-        {publications.map((pub, idx) => (
+        {publications.map((pub) => (
           <article
             key={pub.id}
-            className="p-8 sm:p-10 rounded border border-brand-borderLight dark:border-brand-borderDark bg-white/40 dark:bg-brand-darkBlue/30 hover:border-brand-sciBlue/50 transition-all shadow-xs"
+            className="p-8 sm:p-10 rounded border border-brand-borderLight dark:border-brand-borderDark bg-white/40 dark:bg-brand-darkBlue/25 hover:border-brand-sciBlue/50 transition-all shadow-xs"
           >
             {/* Top metadata line */}
             <div className="flex flex-wrap items-center justify-between gap-3 text-xs font-mono mb-4 pb-4 border-b border-brand-borderLight/60 dark:border-brand-borderDark/60">

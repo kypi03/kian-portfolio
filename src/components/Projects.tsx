@@ -1,6 +1,6 @@
 ﻿import React, { useState } from 'react';
 import { featuredProjects } from '../data/portfolioData';
-import { Layers, ArrowRight, CheckCircle, Sliders, FlaskConical, Binary, Sparkles } from 'lucide-react';
+import { CheckCircle, Sliders, FlaskConical, Binary } from 'lucide-react';
 
 export const Projects: React.FC = () => {
   const [activeStepP1, setActiveStepP1] = useState(0);
@@ -90,28 +90,22 @@ export const Projects: React.FC = () => {
               {/* SVG Scientific Schematic */}
               <div className="relative w-full aspect-[4/3] bg-white dark:bg-brand-darkBlue/80 rounded border border-brand-borderLight/40 dark:border-brand-borderDark/40 p-4 flex flex-col justify-center items-center">
                 <svg viewBox="0 0 320 220" className="w-full h-full text-brand-navy dark:text-brand-warmWhite">
-                  {/* Electrolytic Cell Vessel */}
                   <rect x="30" y="40" width="260" height="150" rx="8" fill="none" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 3" opacity="0.35" />
                   <path d="M 30 75 Q 160 85 290 75 L 290 185 Q 160 195 30 185 Z" fill="rgba(26, 101, 158, 0.08)" />
 
-                  {/* Graphite Anode Substrate */}
                   <rect x="70" y="30" width="24" height="135" rx="2" fill="rgba(7, 26, 43, 0.85)" stroke="#1A659E" strokeWidth="1" />
-                  {/* CoZnFe2O4 Coating Layer */}
                   <rect x="94" y="55" width="8" height="110" fill="#D6A84F" rx="1" opacity="0.9" />
                   <text x="82" y="22" textAnchor="middle" fontSize="8" fontFamily="monospace" fill="currentColor">Graphite</text>
                   <text x="98" y="178" fontSize="7.5" fontFamily="monospace" fill="#D6A84F">CoZnFe₂O₄</text>
 
-                  {/* Cathode */}
                   <rect x="225" y="30" width="20" height="135" rx="2" fill="rgba(74, 91, 108, 0.6)" stroke="#4A5B6C" strokeWidth="1" />
                   <text x="235" y="22" textAnchor="middle" fontSize="8" fontFamily="monospace" fill="currentColor">Cathode</text>
 
-                  {/* Electrical Circuit Wire & Voltage DC Source */}
                   <path d="M 82 30 L 82 15 L 140 15" fill="none" stroke="#1A659E" strokeWidth="1.5" />
                   <circle cx="160" cy="15" r="10" fill="none" stroke="#D6A84F" strokeWidth="1.5" />
                   <text x="160" y="18" textAnchor="middle" fontSize="9" fontWeight="bold" fontFamily="monospace" fill="#D6A84F">V</text>
                   <path d="M 180 15 L 235 15 L 235 30" fill="none" stroke="#1A659E" strokeWidth="1.5" />
 
-                  {/* Electrolyte Interaction: Oleic Acid + MeOH */}
                   <g opacity="0.85">
                     <circle cx="140" cy="95" r="4" fill="#2C82C9" />
                     <text x="148" y="98" fontSize="7.5" fontFamily="monospace" fill="currentColor">Oleic Acid</text>
@@ -120,11 +114,10 @@ export const Projects: React.FC = () => {
                     <text x="173" y="133" fontSize="7.5" fontFamily="monospace" fill="currentColor">Methanol</text>
 
                     <circle cx="125" cy="145" r="2.5" fill="#1A659E" />
-                    <text x="133" y="148" fontSize="7" fontFamily="monospace" fill="currentColor">Na⁺ / Cl⁻</text>
+                    <text x="133" y="148" fontSize="7.5" fontFamily="monospace" fill="currentColor">Na⁺ / Cl⁻</text>
                   </g>
 
-                  {/* Reaction Arrow */}
-                  <path d="M 150 110 L 195 110" stroke="#D6A84F" strokeWidth="1.2" markerEnd="url(#arrow)" />
+                  <path d="M 150 110 L 195 110" stroke="#D6A84F" strokeWidth="1.2" />
                   <text x="175" y="105" textAnchor="middle" fontSize="7" fontFamily="monospace" fill="#D6A84F">Esterification</text>
                 </svg>
               </div>
@@ -248,7 +241,6 @@ export const Projects: React.FC = () => {
               {/* SVG Scientific Schematic */}
               <div className="relative w-full aspect-[4/3] bg-white dark:bg-brand-darkBlue/80 rounded border border-brand-borderLight/40 dark:border-brand-borderDark/40 p-4 flex flex-col justify-center items-center">
                 <svg viewBox="0 0 320 220" className="w-full h-full text-brand-navy dark:text-brand-warmWhite">
-                  {/* Layer 1: Input Factors */}
                   <g id="input-layer">
                     <circle cx="45" cy="50" r="10" fill="none" stroke="#1A659E" strokeWidth="1.5" />
                     <text x="45" y="53" textAnchor="middle" fontSize="7" fontFamily="monospace" fill="currentColor">Temp</text>
@@ -265,7 +257,6 @@ export const Projects: React.FC = () => {
                     <text x="45" y="24" textAnchor="middle" fontSize="8" fontFamily="monospace" fill="#1A659E" fontWeight="bold">Factors</text>
                   </g>
 
-                  {/* Connecting lines to Hidden ANN Layer */}
                   <g stroke="currentColor" strokeWidth="0.5" opacity="0.25">
                     <line x1="55" y1="50" x2="150" y2="70" />
                     <line x1="55" y1="50" x2="150" y2="115" />
@@ -278,7 +269,6 @@ export const Projects: React.FC = () => {
                     <line x1="55" y1="185" x2="150" y2="160" />
                   </g>
 
-                  {/* Hidden ANN Neurons + DOE Matrix block */}
                   <g id="hidden-layer">
                     <circle cx="150" cy="70" r="12" fill="rgba(26, 101, 158, 0.15)" stroke="#2C82C9" strokeWidth="1.5" />
                     <text x="150" y="73" textAnchor="middle" fontSize="7.5" fontFamily="monospace" fill="currentColor">h₁</text>
@@ -292,7 +282,6 @@ export const Projects: React.FC = () => {
                     <text x="150" y="24" textAnchor="middle" fontSize="8" fontFamily="monospace" fill="#2C82C9" fontWeight="bold">ANN Layer</text>
                   </g>
 
-                  {/* Connecting lines to Output Layer */}
                   <g stroke="#D6A84F" strokeWidth="0.8" opacity="0.45">
                     <line x1="162" y1="70" x2="265" y2="90" />
                     <line x1="162" y1="115" x2="265" y2="90" />
@@ -300,13 +289,12 @@ export const Projects: React.FC = () => {
                     <line x1="162" y1="160" x2="265" y2="145" />
                   </g>
 
-                  {/* Output Layer: Yield & Selectivity */}
                   <g id="output-layer">
                     <circle cx="265" cy="90" r="13" fill="rgba(214, 168, 79, 0.15)" stroke="#D6A84F" strokeWidth="1.5" />
                     <text x="265" y="93" textAnchor="middle" fontSize="7.5" fontFamily="monospace" fill="#D6A84F" fontWeight="bold">Yield</text>
 
                     <circle cx="265" cy="145" r="13" fill="rgba(214, 168, 79, 0.15)" stroke="#D6A84F" strokeWidth="1.5" />
-                    <text x="265" y="148" textAnchor="middle" fontSize="7" fontFamily="monospace" fill="#D6A84F" fontWeight="bold">Selectivity</text>
+                    <text x="265" y="148" textAnchor="middle" fontSize="7.5" fontFamily="monospace" fill="#D6A84F" fontWeight="bold">Selectivity</text>
 
                     <text x="265" y="24" textAnchor="middle" fontSize="8" fontFamily="monospace" fill="#D6A84F" fontWeight="bold">Target</text>
                   </g>

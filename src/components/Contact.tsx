@@ -1,6 +1,6 @@
 ﻿import React, { useState } from 'react';
 import { personalInfo } from '../data/portfolioData';
-import { Mail, Copy, Check, ExternalLink, ArrowUpRight } from 'lucide-react';
+import { Mail, Copy, Check, ArrowUpRight } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   const [copied, setCopied] = useState(false);
