@@ -1,0 +1,89 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #F5F3EE;
+    --bg-surface: #FFFFFF;
+    --bg-subtle: #EDEAE1;
+    --text-primary: #071A2B;
+    --text-secondary: #4A5B6C;
+    --text-muted: #7E8D9B;
+    --border-subtle: #D9DEE3;
+    --border-accent: #1A659E;
+    --accent-gold: #D6A84F;
+    --grid-line: rgba(7, 26, 43, 0.05);
+  }
+
+  .dark {
+    --bg-primary: #071A2B;
+    --bg-surface: #0B2942;
+    --bg-subtle: #081F33;
+    --text-primary: #F5F3EE;
+    --text-secondary: #CBD5E1;
+    --text-muted: #8499AB;
+    --border-subtle: #1E3A56;
+    --border-accent: #2C82C9;
+    --accent-gold: #D6A84F;
+    --grid-line: rgba(217, 222, 227, 0.06);
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+}
+
+/* Precision Swiss grid texture */
+.scientific-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+}
+
+.scientific-grid-dense {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+}
+
+/* Subtle editorial borders */
+.editorial-border-b {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.editorial-border-t {
+  border-top: 1px solid var(--border-subtle);
+}
+
+.editorial-border-r {
+  border-right: 1px solid var(--border-subtle);
+}
+
+.editorial-border-l {
+  border-left: 1px solid var(--border-subtle);
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-accent);
+}
